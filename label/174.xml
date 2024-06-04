@@ -1,0 +1,26 @@
+<annotation>
+	<folder>bing-军舰图片</folder>
+	<filename>174.jpg</filename>
+	<path>D:\作业\图片\bing-军舰图片\174.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>2048</width>
+		<height>1446</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>warship</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>79</xmin>
+			<ymin>446</ymin>
+			<xmax>1942</xmax>
+			<ymax>1198</ymax>
+		</bndbox>
+	</object>
+</annotation>

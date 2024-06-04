@@ -1,0 +1,26 @@
+<annotation>
+	<folder>图片</folder>
+	<filename>0-DDG74.jpg</filename>
+	<path>D:\作业\图片\0-DDG74.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>1460</width>
+		<height>1043</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>warship</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>37</xmin>
+			<ymin>43</ymin>
+			<xmax>1353</xmax>
+			<ymax>774</ymax>
+		</bndbox>
+	</object>
+</annotation>

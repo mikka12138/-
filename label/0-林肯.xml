@@ -1,0 +1,26 @@
+<annotation>
+	<folder>图片</folder>
+	<filename>0-林肯.jpg</filename>
+	<path>D:\作业\图片\0-林肯.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>3339</width>
+		<height>1872</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>warship</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>45</xmin>
+			<ymin>543</ymin>
+			<xmax>3245</xmax>
+			<ymax>1554</ymax>
+		</bndbox>
+	</object>
+</annotation>

@@ -1,0 +1,26 @@
+<annotation>
+	<folder>图片</folder>
+	<filename>由民间目击者在弗吉尼亚海滩岸边拍摄到的“圣哈金托”号巡洋舰 图片来源：社交媒体.jpg</filename>
+	<path>D:\作业\图片\由民间目击者在弗吉尼亚海滩岸边拍摄到的“圣哈金托”号巡洋舰 图片来源：社交媒体.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>1109</width>
+		<height>742</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>warship</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>393</xmin>
+			<ymin>409</ymin>
+			<xmax>754</xmax>
+			<ymax>511</ymax>
+		</bndbox>
+	</object>
+</annotation>

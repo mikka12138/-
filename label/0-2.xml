@@ -1,0 +1,26 @@
+<annotation>
+	<folder>图片</folder>
+	<filename>0-2.png</filename>
+	<path>D:\作业\图片\0-2.png</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>996</width>
+		<height>473</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>warship</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>61</xmin>
+			<ymin>141</ymin>
+			<xmax>441</xmax>
+			<ymax>422</ymax>
+		</bndbox>
+	</object>
+</annotation>

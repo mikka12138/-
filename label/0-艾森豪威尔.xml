@@ -1,0 +1,26 @@
+<annotation>
+	<folder>图片</folder>
+	<filename>0-艾森豪威尔.png</filename>
+	<path>D:\作业\图片\0-艾森豪威尔.png</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>683</width>
+		<height>669</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>warship</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>273</xmin>
+			<ymin>353</ymin>
+			<xmax>522</xmax>
+			<ymax>473</ymax>
+		</bndbox>
+	</object>
+</annotation>

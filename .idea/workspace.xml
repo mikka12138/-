@@ -1,13 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5def26ee-dec4-4018-b488-cf8902bb1519" name="Default Changelist" comment="" />
+    <list default="true" id="992ee042-b53f-4dbd-b501-73a549ba8272" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ProjectId" id="2hLe9jyCFSuH5HeMX5ID0ASuexG" />
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="2hGr0qLF3HecSYPMspckX2OBUtX" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -15,16 +22,13 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="Python" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/model_data" />
-    </key>
-  </component>
-  <component name="RunManager">
-    <configuration name="predict" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="yolov4-pytorch-min" />
+  <component name="RunManager" selected="Python.ship_count">
+    <configuration name="count" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="CRAFT-pytorch" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -35,7 +39,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/predict.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/count.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -44,9 +48,91 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="filenama_test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="CRAFT-pytorch" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/filenama_test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="json_warship_count" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="CRAFT-pytorch" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/json_warship_count.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="ship_count" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="CRAFT-pytorch" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ship_count.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pytest in filenama_test.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="CRAFT-pytorch" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/filenama_test.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.predict" />
+        <item itemvalue="Python.ship_count" />
+        <item itemvalue="Python.json_warship_count" />
+        <item itemvalue="Python.filenama_test" />
+        <item itemvalue="Python tests.pytest in filenama_test.py" />
+        <item itemvalue="Python.count" />
       </list>
     </recent_temporary>
   </component>
@@ -67,50 +153,70 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="5def26ee-dec4-4018-b488-cf8902bb1519" name="Default Changelist" comment="" />
-      <created>1717377635803</created>
+      <changelist id="992ee042-b53f-4dbd-b501-73a549ba8272" name="Default Changelist" comment="" />
+      <created>1717231034754</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1717377635803</updated>
+      <updated>1717231034754</updated>
     </task>
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="611" y="336" width="688" height="405" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1717378395032">
-      <screen x="0" y="28" width="1920" height="1014" />
+    <state x="451" y="210" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1717234081017">
+      <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="611" y="336" width="688" height="405" key="#com.intellij.fileTypes.FileTypeChooser/0.28.1920.1014@0.28.1920.1014" timestamp="1717378395032" />
-    <state x="693" y="282" width="524" height="512" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1717378618496">
-      <screen x="0" y="28" width="1920" height="1014" />
+    <state x="451" y="210" key="#com.intellij.execution.impl.EditConfigurationsDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1717234081017" />
+    <state x="658" y="349" width="680" height="406" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1717233420354">
+      <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="693" y="282" width="524" height="512" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.28.1920.1014@0.28.1920.1014" timestamp="1717378618496" />
-    <state x="354" y="307" width="424" height="491" key="FileChooserDialogImpl" timestamp="1717378260711">
-      <screen x="0" y="28" width="1920" height="1014" />
+    <state x="658" y="349" width="680" height="406" key="#com.intellij.fileTypes.FileTypeChooser/67.27.1853.1053@67.27.1853.1053" timestamp="1717233420354" />
+    <state x="776" y="310" width="424" height="484" key="FileChooserDialogImpl" timestamp="1717317835852">
+      <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="354" y="307" width="424" height="491" key="FileChooserDialogImpl/0.28.1920.1014@0.28.1920.1014" timestamp="1717378260711" />
-    <state width="1895" height="261" key="GridCell.Tab.0.bottom" timestamp="1717379998552">
-      <screen x="0" y="28" width="1920" height="1014" />
+    <state x="776" y="310" width="424" height="484" key="FileChooserDialogImpl/67.27.1853.1053@67.27.1853.1053" timestamp="1717317835852" />
+    <state width="1826" height="393" key="GridCell.Tab.0.bottom" timestamp="1717322498557">
+      <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="1895" height="261" key="GridCell.Tab.0.bottom/0.28.1920.1014@0.28.1920.1014" timestamp="1717379998552" />
-    <state width="1895" height="261" key="GridCell.Tab.0.center" timestamp="1717379998552">
-      <screen x="0" y="28" width="1920" height="1014" />
+    <state width="1826" height="393" key="GridCell.Tab.0.bottom/67.27.1853.1053@67.27.1853.1053" timestamp="1717322498557" />
+    <state width="1826" height="393" key="GridCell.Tab.0.center" timestamp="1717322498554">
+      <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="1895" height="261" key="GridCell.Tab.0.center/0.28.1920.1014@0.28.1920.1014" timestamp="1717379998552" />
-    <state width="1895" height="261" key="GridCell.Tab.0.left" timestamp="1717379998551">
-      <screen x="0" y="28" width="1920" height="1014" />
+    <state width="1826" height="393" key="GridCell.Tab.0.center/67.27.1853.1053@67.27.1853.1053" timestamp="1717322498554" />
+    <state width="1826" height="393" key="GridCell.Tab.0.left" timestamp="1717322498554">
+      <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="1895" height="261" key="GridCell.Tab.0.left/0.28.1920.1014@0.28.1920.1014" timestamp="1717379998551" />
-    <state width="1895" height="261" key="GridCell.Tab.0.right" timestamp="1717379998552">
-      <screen x="0" y="28" width="1920" height="1014" />
+    <state width="1826" height="393" key="GridCell.Tab.0.left/67.27.1853.1053@67.27.1853.1053" timestamp="1717322498554" />
+    <state width="1826" height="393" key="GridCell.Tab.0.right" timestamp="1717322498555">
+      <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="1895" height="261" key="GridCell.Tab.0.right/0.28.1920.1014@0.28.1920.1014" timestamp="1717379998552" />
-    <state x="616" y="362" key="com.intellij.ide.util.TipDialog" timestamp="1717380038555">
-      <screen x="0" y="28" width="1920" height="1014" />
+    <state width="1826" height="393" key="GridCell.Tab.0.right/67.27.1853.1053@67.27.1853.1053" timestamp="1717322498555" />
+    <state width="1826" height="339" key="GridCell.Tab.1.bottom" timestamp="1717239736056">
+      <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="616" y="362" key="com.intellij.ide.util.TipDialog/0.28.1920.1014@0.28.1920.1014" timestamp="1717380038555" />
-    <state x="615" y="107" width="690" height="855" key="find.popup" timestamp="1717379817986">
-      <screen x="0" y="28" width="1920" height="1014" />
+    <state width="1826" height="339" key="GridCell.Tab.1.bottom/67.27.1853.1053@67.27.1853.1053" timestamp="1717239736056" />
+    <state width="1826" height="339" key="GridCell.Tab.1.center" timestamp="1717239736056">
+      <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="615" y="107" width="690" height="855" key="find.popup/0.28.1920.1014@0.28.1920.1014" timestamp="1717379817986" />
+    <state width="1826" height="339" key="GridCell.Tab.1.center/67.27.1853.1053@67.27.1853.1053" timestamp="1717239736056" />
+    <state width="1826" height="339" key="GridCell.Tab.1.left" timestamp="1717239736056">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state width="1826" height="339" key="GridCell.Tab.1.left/67.27.1853.1053@67.27.1853.1053" timestamp="1717239736056" />
+    <state width="1826" height="339" key="GridCell.Tab.1.right" timestamp="1717239736056">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state width="1826" height="339" key="GridCell.Tab.1.right/67.27.1853.1053@67.27.1853.1053" timestamp="1717239736056" />
+    <state x="475" y="187" key="SettingsEditor" timestamp="1717231322065">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="475" y="187" key="SettingsEditor/67.27.1853.1053@67.27.1853.1053" timestamp="1717231322065" />
+    <state x="643" y="245" width="700" height="614" key="find.popup" timestamp="1717235788944">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="643" y="245" width="700" height="614" key="find.popup/67.27.1853.1053@67.27.1853.1053" timestamp="1717235788944" />
+    <state x="656" y="257" width="672" height="678" key="search.everywhere.popup" timestamp="1717377197005">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="656" y="257" width="672" height="678" key="search.everywhere.popup/67.27.1853.1053@67.27.1853.1053" timestamp="1717377197005" />
   </component>
 </project>

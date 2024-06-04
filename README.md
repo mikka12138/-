@@ -1,34 +1,103 @@
-项目简介
-（1）项目目的与意义
-本项目着眼满足对图像数据高效处理的需求，聚焦舰船图像中的目标与舷号检测需求，针对高质量舰船数据集匮乏及背景文字干扰等问题，探索图像数据自动收集和标注方法，实现舰船与舷号的高效协同检测，为后续舰船图像分析提供坚实基础。
-舰船目标和舷号检测问题是海上态势感知、舰船动向分析等应用的关键手段支撑，对开源情报分析、图像数据挖掘等领域的具有重要作用，在军事和民用领域逐渐受到广泛关注。开展图片中舰船目标和舷号信息的检测方法研究，对于自动分析互联网上海量图像数据具有十分重要的意义。
-（2）项目主要成果及特色
-1）项目主要研究成果
-①舰船目标和舷号检测数据集
-针对当前舰船目标和舷号检测缺乏公开数据集的问题，本项目通过采集网页、解析文档、下载开源军事数据等方式收集了舰船图像数据集，并使用Labelme图像标注工具进行了舰船目标和舷号标注，构建了舰船目标和舷号检测数据集，包含4393张图片，4443个舰船目标（一张图片可能包含多个舰船目标），3136个舷号（部分图片只有舰船，没有舷号）、10953个舷号字符，数据集整体构建过程如图- 1所示。
- ![image](https://github.com/mikka12138/WarShip-detection/assets/136318942/4bdc4e8a-0a47-470a-910a-b449eeb46811)
-图- 1 舰船目标和舷号检测数据构建过程
-部分样例数据如图- 2所示：
- ![image](https://github.com/mikka12138/WarShip-detection/assets/136318942/09e9e740-4e38-4bb8-98f5-14cb83830867)
-图- 2 舰船目标和舷号检测数据集样例
-相比于已有工作，本项目构建的数据集数量更多、来源广泛，且同时标注了舰船目标及舷号，更加贴合实际应用。
-②舰船基本属性数据集
-舰船舷号识别通常依赖于场景文字识别算法，由于舷号区域存在着各种干扰因素，导致当前识别算法可能无法完整识别出舷号。为了充分利用现实舷号信息辅助开展识别，本项目构建了舷号数据集。基于指导教员提供的简氏防务数据（PDF文件），本项目对PDF文件进行了解析，收集了7494条舰船基本属性数据，包含舰船名称、国家、舷号和类型等基本信息，基本覆盖世界主流国家的舰船舷号。
-数据集构建过程及部分国家地区舷号统计信息如图- 3所示。
- ![image](https://github.com/mikka12138/WarShip-detection/assets/136318942/539e23ea-f1f8-4ef7-98de-436d7c7d3171)
-图- 3 舰船基本属性数据集构建过程及统计信息
-基于构建的舷号基本属性数据集，可以作为字典对初始检测的舷号信息进行校正，从而提升舷号识别准确率。
-③舰船目标和舷号检测算法模型
-针对舰船目标检测，项目采用了当前主流的YOLO目标检测模型，搭建了目标检测模型，并使用标注的数据对公开的模型进行了微调，实现了舰船目标的检测。针对舰船舷号检测，项目采用场景文字识别模型CRAFT来检测图片中出现的文字，并针对水印文字或背景干扰等问题，利用舰船目标之间的位置约束信息来进行非舷号文字的过滤，提升舷号检测效果。整体框架如下图所示。
- ![image](https://github.com/mikka12138/WarShip-detection/assets/136318942/823f3461-488c-420d-99b2-17fbc9ec476d)
-图- 4 舰船目标和舷号舷号检测整体框架图
-典型检测结果如下图所示。
- ![image](https://github.com/mikka12138/WarShip-detection/assets/136318942/d4762e28-5604-4bb0-aba6-cd60c0634ea6)
-图- 5 舰船目标检测与舷号检测结果
-2）项目创新特色、实践意义和社会影响
-①创新特色与实践意义
-已有研究大多将图片中的舰船目标检测和舰船舷号检测视为两个独立的任务，没有充分挖掘它们之间的关联。然而，在实际的应用下，通常需要同时开展舰船目标和舷号检测。此外，当前的舷号检测依赖于场景文字识别模型，没有利用已有的舷号信息，可能会存在舷号字符漏检导致识别失败的问题。
-相比于已有研究，本项目的创新特色有两点：一是基于目标检测和舷号检测结果，综合考虑图像中舰船和舷号的空间位置约束，能够有效地过滤图像中无关或错误检测的文字信息；二是针对舷号检测初始结果不准确问题，收集构建了舰船舷号字典，使用编辑距离来对初始检测识别结果进行校正，能够提升最终结果的准确性。
-针对当前舰船目标和舷号检测需求，项目组开展了相关资料、代码的收集，利用标注数据训练舰船目标检测模型，提升项目组成员动手实践能力。
-②社会影响
-当前舰船舷号检测识别领域缺乏公开的数据集，导致已有工作难以复现、不同算法难以对比等问题。项目组在GitHub公开本项目所标注构建的数据集，可以为后续的研究工作提供高质量标注样本数据支撑，促进相关领域研究。
+## CRAFT: Character-Region Awareness For Text detection
+Official Pytorch implementation of CRAFT text detector | [Paper](https://arxiv.org/abs/1904.01941) | [Pretrained Model](https://drive.google.com/open?id=1Jk4eGD7crsqCCg9C9VjCLkMN3ze8kutZ) | [Supplementary](https://youtu.be/HI8MzpY8KMI)
+
+**[Youngmin Baek](mailto:youngmin.baek@navercorp.com), Bado Lee, Dongyoon Han, Sangdoo Yun, Hwalsuk Lee.**
+ 
+Clova AI Research, NAVER Corp.
+
+### Sample Results
+
+### Overview
+PyTorch implementation for CRAFT text detector that effectively detect text area by exploring each character region and affinity between characters. The bounding box of texts are obtained by simply finding minimum bounding rectangles on binary map after thresholding character region and affinity scores. 
+
+<img width="1000" alt="teaser" src="./figures/craft_example.gif">
+
+## Updates
+**13 Jun, 2019**: Initial update
+**20 Jul, 2019**: Added post-processing for polygon result
+**28 Sep, 2019**: Added the trained model on IC15 and the link refiner
+
+
+## Getting started
+### Install dependencies
+#### Requirements
+- PyTorch>=0.4.1
+- torchvision>=0.2.1
+- opencv-python>=3.4.2
+- check requiremtns.txt
+```
+pip install -r requirements.txt
+```
+
+### Training
+The code for training is not included in this repository, and we cannot release the full training code for IP reason.
+
+
+### Test instruction using pretrained model
+- Download the trained models
+ 
+ *Model name* | *Used datasets* | *Languages* | *Purpose* | *Model Link* |
+ | :--- | :--- | :--- | :--- | :--- |
+General | SynthText, IC13, IC17 | Eng + MLT | For general purpose | [Click](https://drive.google.com/open?id=1Jk4eGD7crsqCCg9C9VjCLkMN3ze8kutZ)
+IC15 | SynthText, IC15 | Eng | For IC15 only | [Click](https://drive.google.com/open?id=1i2R7UIUqmkUtF0jv_3MXTqmQ_9wuAnLf)
+LinkRefiner | CTW1500 | - | Used with the General Model | [Click](https://drive.google.com/open?id=1XSaFwBkOaFOdtk4Ane3DFyJGPRw6v5bO)
+
+* Run with pretrained model
+``` (with python 3.7)
+python test.py --trained_model=[weightfile] --test_folder=[folder path to test images]
+```
+
+The result image and socre maps will be saved to `./result` by default.
+
+### Arguments
+* `--trained_model`: pretrained model
+* `--text_threshold`: text confidence threshold
+* `--low_text`: text low-bound score
+* `--link_threshold`: link confidence threshold
+* `--cuda`: use cuda for inference (default:True)
+* `--canvas_size`: max image size for inference
+* `--mag_ratio`: image magnification ratio
+* `--poly`: enable polygon type result
+* `--show_time`: show processing time
+* `--test_folder`: folder path to input images
+* `--refine`: use link refiner for sentense-level dataset
+* `--refiner_model`: pretrained refiner model
+
+
+## Links
+- WebDemo : https://demo.ocr.clova.ai/
+- Repo of recognition : https://github.com/clovaai/deep-text-recognition-benchmark
+
+## Citation
+```
+@inproceedings{baek2019character,
+  title={Character Region Awareness for Text Detection},
+  author={Baek, Youngmin and Lee, Bado and Han, Dongyoon and Yun, Sangdoo and Lee, Hwalsuk},
+  booktitle={Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition},
+  pages={9365--9374},
+  year={2019}
+}
+```
+
+## License
+```
+Copyright (c) 2019-present NAVER Corp.
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.  IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+```

@@ -1,4 +1,0 @@
-warship
-submarine
-armoredcar
-person
